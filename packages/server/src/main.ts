@@ -18,7 +18,7 @@ async function bootstrap() {
     })
   );
   app.use(compression()); // 启用 gzip 压缩
-  app.use(helmet());
+  app.use(helmet()); // helmet是一个保护Node.JS应用的安全项目
   app.useGlobalInterceptors(new TransformInterceptor()); // 正常情况下，响应值统一
   app.useGlobalFilters(new HttpExceptionFilter()); // 异常情况下，响应值统一
 

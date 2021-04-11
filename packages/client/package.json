@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "debug": "next dev",
     "build": "next build",
     "prebuild": "rimraf .next",
     "start": "next start",
